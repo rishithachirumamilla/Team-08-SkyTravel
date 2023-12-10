@@ -1,0 +1,32 @@
+.auth {
+  width: 100%;
+
+  &__nav {
+    width: 100%;
+    height: 3rem;
+    background-color: $THEME_COLOR;
+    color: $LIGHTER_WHITE;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 4rem;
+    }
+
+    &__links {
+      display: flex;
+      gap: 2rem;
+      font-size: 0.9rem;
+      img {
+        width: 1.5rem;
+      }
+
+      &__link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+  }
+}

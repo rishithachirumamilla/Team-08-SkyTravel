@@ -1,0 +1,38 @@
+<!-- reply.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reply Page</title>
+    <style>
+    .footer {
+      background-color: #007BFF;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Support Ticket Reply</h1>
+    
+    <div>
+        <strong>Ticket ID:</strong> <%= ticket.ticket_ref %><br>
+        <strong>You wrote:</strong> <%= ticket.message %><br>
+        <strong>Reply:</strong> <%= ticket.reply %><br>
+        <strong>Date:</strong> <%= ticket.updated_date %>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 SKY TRAVEL. All rights reserved.</p>
+      </div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Ticket</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .ticket-container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .ticket-header {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .ticket-details {
+      padding: 20px;
+    }
+    .flight-info {
+      margin-top: 20px;
+    }
+    .footer {
+      background-color: #007BFF;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="ticket-container">
+    <h3>Your upcoming flight has been updated by the airline. Please find the updated ticket below.</h3>
+    <div class="ticket-header">
+      <h2>Flight Ticket</h2>
+    </div>
+    <div class="ticket-details">
+      <h2>Booking Reference</h2>
+      <h2><%= booking.pnr %></h2>
+        <h3>Passenger Information</h3>
+        <p>Name: <%= user.name %></p>
+        <p>Email: <%= user.email %></p>
+        <p>Phone: <%= user.phone %></p>
+        <h3>Flight Information</h3>
+        <p>Flight Number: <%= flight.flightNumber %></p>
+        <p>Departure: <%= route.departure.city %></p>
+        <p>Destination: <%= route.destination.city %></p>
+        <p>Date: <%= schedule.departureTime.toDateString() %></p>
+        <p>Departure Time: <%= schedule.departureTime.toLocaleTimeString() %></p>
+        <p>Arrival Time: <%= schedule.arrivalTime.toLocaleTimeString() %></p>
+        <h3>Seat Information</h3>
+        <p>Class: <%= booking.travel_class %></p>
+        <p>Seat Number: <%= booking.seat_number %></p>
+      </div>
+    <div class="flight-info">
+      <p>Thank you for choosing our airline. Have a pleasant journey!</p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2023 SKY TRAVEL. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+body {
+  box-sizing: border-box;
+  background-color: $BG_COLOR !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+
+  &:not(i) {
+    font-family: "Inter", sans-serif !important;
+  }
+}
