@@ -1,0 +1,91 @@
+.cInputWithIcon {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  background-color: $LIGHTER_WHITE;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  align-items: center;
+
+  &__icon {
+    padding: 0 0 0 1rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      color: $THEME_COLOR;
+    }
+  }
+
+  input {
+    flex: 1;
+    padding: 0 0.5rem;
+    border: none;
+    outline: none;
+  }
+}
+
+.cSelect {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+  label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-left: 1rem;
+  }
+  select {
+    height: 2.5rem;
+    background-color: $LIGHTER_WHITE;
+    border-radius: 0.75rem;
+    padding: 0 1rem;
+    border: none;
+    outline: none;
+    background-color: $BG_COLOR;
+    width: 100%;
+  }
+}
+
+.cInput {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+  label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-left: 1rem;
+  }
+  input {
+    height: 2.5rem;
+    background-color: $LIGHTER_WHITE;
+    border-radius: 0.75rem;
+    padding: 0 1rem;
+    border: none;
+    outline: none;
+    background-color: $BG_COLOR;
+    width: 100%;
+  }
+}
+
+.cFWButton {
+  width: 100%;
+  height: 2.5rem;
+  background-color: $THEME_COLOR;
+  color: $LIGHTER_WHITE;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+.cSmButton {
+  height: 2rem;
+  border: none;
+  outline: none;
+  padding: 0 1rem;
+  background-color: $THEME_COLOR;
+  color: $LIGHTER_WHITE;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}

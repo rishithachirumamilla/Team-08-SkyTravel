@@ -1,0 +1,102 @@
+.flightSchedules {
+  width: 100%;
+  &__search {
+    width: 100%;
+    height: 5rem;
+    background-color: $THEME_COLOR;
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+
+    &__input {
+      background-color: $LIGHTER_WHITE;
+      height: 4rem;
+      display: flex;
+      padding: 0 1rem;
+      align-items: center;
+
+      label {
+        color: $THEME_COLOR;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+      input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: $THEME_COLOR;
+        padding: 1rem;
+        &::placeholder {
+          color: $THEME_COLOR;
+        }
+      }
+
+      &:first-child {
+        width: 20rem;
+      }
+
+      &:first-child {
+        border-radius: 1rem 0 0 1rem;
+      }
+
+      //   &:last-child {
+      //     border-radius: 0 1rem 1rem 0;
+      //   }
+    }
+
+    &__btn {
+      width: 15rem;
+      border-radius: 0 1rem 1rem 0;
+      background-color: $LIGHTER_WHITE;
+      height: 4rem;
+      display: flex;
+      padding: 0 1rem;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    &__left {
+      width: 20rem;
+      padding: 2rem;
+      h3,
+      h4 {
+        color: $THEME_COLOR;
+      }
+      span {
+        font-size: 0.8rem;
+      }
+
+      &__filter {
+        margin-top: 2rem;
+        display: flex;
+        flex-flow: column;
+        gap: 0.5rem;
+        &__item {
+          width: 100%;
+          display: flex;
+          gap: 0.5rem;
+          font-size: 0.8rem;
+          align-items: center;
+        }
+      }
+    }
+
+    &__right {
+      flex-grow: 1;
+      padding: 1rem;
+      display: flex;
+      flex-flow: column;
+      gap: 1rem;
+      h2 {
+        font-weight: 500;
+        color: $THEME_COLOR;
+        margin: 1rem 0;
+      }
+    }
+  }
+}
